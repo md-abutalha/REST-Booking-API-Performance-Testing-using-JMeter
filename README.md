@@ -85,22 +85,22 @@ jmeter -g report/bookapi_t2700.jtl -o report/bookapi_t2700.html
 open report/bookapi_t2700.html
 
 ```
-### **Test Scenarios**
+## **Test Scenarios**
 The performance test was executed with the following scenarios:
 
-# 1. 2700 Concurrent Requests with 10 Loop Count:
+### 1. 2700 Concurrent Requests with 10 Loop Count:
 
 - Avg TPS: ~178
 - Total Requests: 16,200
-# 2. 2800 Concurrent Requests with 10 Loop Count:
+### 2. 2800 Concurrent Requests with 10 Loop Count:
 
 - Avg TPS: ~274
 - Total Requests: 16,800
-# 3. 3000 Concurrent Requests with 10 Loop Count:
+### 3. 3000 Concurrent Requests with 10 Loop Count:
 
 - Avg TPS: ~222
 - Total Requests: 18,000
-# 4. 3100 Concurrent Requests with 10 Loop Count:
+### 4. 3100 Concurrent Requests with 10 Loop Count:
 
 - Avg TPS: ~167
 - Total Requests: 18,600
