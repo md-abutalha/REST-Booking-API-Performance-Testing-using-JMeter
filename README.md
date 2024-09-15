@@ -132,7 +132,7 @@ The performance testing process involved evaluating the following aspects:
 
 
 ### Summary and Findings
-- The REST Booking API can handle up to 2900 concurrent requests without any significant degradation in performance or errors.
+- The REST Booking API can handle up to 2800 concurrent requests without any significant degradation in performance or errors.
 - At 3100 concurrent requests, the server showed a slight increase in error rate (0.02%) due to connection timeouts.
 - Optimal Load: Based on the results, the API can efficiently manage up to 2800 concurrent requests with an average TPS of 274 and minimal error rates.
 
