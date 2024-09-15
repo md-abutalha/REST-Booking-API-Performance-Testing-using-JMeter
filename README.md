@@ -54,38 +54,38 @@ java -version
 ```
 If Java is not installed, download and install it from: Oracle Java.
 
-## Step 3: Verify JMeter Installation
+### Step 3: Verify JMeter Installation
 You can verify JMeter installation by running the following command in the terminal:
 
 ```bash
 jmeter -v
 ```
-## Project Setup
+### Project Setup
 - Place the JMX file in the JMeter bin directory: Copy your JMX file (bookapi_t2700.jmx) into the JMeter bin directory.
 
 - Create a Report Folder: Inside the bin directory, create a folder called report to store the test results.
 ```bash
 mkdir report
 ```
-## Running the Tests
+### Running the Tests
 To execute the performance tests, follow these steps:
 
- ## 1. Run the JMeter test in Non-GUI Mode: Run the following command to execute the performance test and generate the .jtl report file:
+### 1. Run the JMeter test in Non-GUI Mode: Run the following command to execute the performance test and generate the .jtl report file:
 ```bash
 jmeter -n -t bookapi_t2700.jmx -l report/bookapi_t2700.jtl
 
 ```
-## 2. Generate HTML Report: Once the test is complete, generate an HTML report using the .jtl file:
+### 2. Generate HTML Report: Once the test is complete, generate an HTML report using the .jtl file:
 ```bash
 jmeter -g report/bookapi_t2700.jtl -o report/bookapi_t2700.html
 
 ```
-## 3. View the Report: Open the generated HTML report in a web browser to view detailed performance metrics:
+### 3. View the Report: Open the generated HTML report in a web browser to view detailed performance metrics:
 ```bash
 open report/bookapi_t2700.html
 
 ```
-## **Test Scenarios**
+### **Test Scenarios**
 The performance test was executed with the following scenarios:
 
 # 1. 2700 Concurrent Requests with 10 Loop Count:
@@ -106,7 +106,7 @@ The performance test was executed with the following scenarios:
 - Total Requests: 18,600
 - Error Rate: 0.02% (4 requests resulted in connection timeout)
 
-## Generating Reports
+### Generating Reports
 The generated report includes various key performance indicators such as:
 
 - APDEX (Application Performance Index): Measures user satisfaction based on response times.
@@ -115,7 +115,7 @@ The generated report includes various key performance indicators such as:
 - Error Rate: Number of failed requests out of the total requests sent.
 - Top Errors by Sampler: Lists the most common errors encountered during the test.
 
-## Performance Test Techniques
+### Performance Test Techniques
 The performance testing process involved evaluating the following aspects:
 
 - Concurrent Users: Load tested with up to 3100 concurrent users to simulate real-world scenarios.
@@ -123,7 +123,7 @@ The performance testing process involved evaluating the following aspects:
 - Response Time: Measured at each load level to evaluate server performance and responsiveness.
 - Error Monitoring: Connection timeouts and other errors were monitored. At higher loads (3100 concurrent requests), a small error rate of 0.02% was observed due to connection timeouts.
 
-## _Screenshots of result_
+### _Screenshots of result_
 ![image](https://github.com/user-attachments/assets/7fdb0a83-db73-4343-beb8-837d4c53d80e)
 ![image](https://github.com/user-attachments/assets/998f61eb-d998-4d28-ba43-6f2428bc485b)
 ![image](https://github.com/user-attachments/assets/e5afe041-06a2-4e2e-8e4d-151ed95d87e8)
@@ -132,7 +132,7 @@ The performance testing process involved evaluating the following aspects:
 ![image](https://github.com/user-attachments/assets/ab2e77cd-d16a-4a7f-bed4-c4aa33caed2d)
 
 
-## Summary and Findings
+### Summary and Findings
 - The REST Booking API can handle up to 2900 concurrent requests without any significant degradation in performance or errors.
 - At 3100 concurrent requests, the server showed a slight increase in error rate (0.02%) due to connection timeouts.
 - Optimal Load: Based on the results, the API can efficiently manage up to 2800 concurrent requests with an average TPS of 274 and minimal error rates.
