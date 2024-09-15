@@ -16,7 +16,6 @@ This repository contains the performance testing of the **REST Booking API** usi
 - [Performance Test Techniques](#performance-test-techniques)
 - [Summary and Findings](#summary-and-findings)
 - [Contact](#contact)
-- [License](#license)
 
 ---
 
